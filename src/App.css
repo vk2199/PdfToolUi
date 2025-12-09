@@ -36,3 +36,98 @@
     transform: rotate(360deg);
   }
 }
+/* GLOBAL RESET & RESPONSIVE BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Container Center */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Responsive Buttons */
+button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Images Full Responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* FLEX WRAP for your upload file section */
+.uploadSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Input Field responsive */
+input[type="file"],
+input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* For PDF Cards / Preview */
+.pdf-card {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+}
+
+/* ----------- RESPONSIVE BREAKPOINTS ----------- */
+
+/* Mobile – 480px */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .uploadSection {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* Tablet – 768px */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .pdf-card {
+    max-width: unset;
+  }
+}
+
+/* Small Laptop – 1024px */
+@media (max-width: 1024px) {
+  .uploadSection {
+    justify-content: space-around;
+  }
+}
+
