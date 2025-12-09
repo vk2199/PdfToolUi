@@ -28,7 +28,7 @@ const ProtectPdf = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/pdf/protect",
+        `${process.env.REACT_APP_BACKEND_URL}/pdf/protect-pdf`,
         formData,
         {
           responseType: "blob",

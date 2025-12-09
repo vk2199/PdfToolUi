@@ -28,7 +28,7 @@ const WatermarkPdf = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/pdf/watermark-single",
+        `${process.env.REACT_APP_BACKEND_URL}/pdf/watermark`,
         formData,
         {
           responseType: "blob",

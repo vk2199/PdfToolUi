@@ -72,7 +72,7 @@ const RemovePages = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/pdf/remove-pages",
+        `${process.env.REACT_APP_BACKEND_URL}/pdf/remove-pages`,
         formData,
         { responseType: "blob" }
       );

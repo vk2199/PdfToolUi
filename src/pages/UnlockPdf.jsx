@@ -28,7 +28,7 @@ const UnlockPdf = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/pdf/unlock",
+        `${process.env.REACT_APP_BACKEND_URL}/pdf/unlock-pdf`,
         formData,
         {
           responseType: "blob",

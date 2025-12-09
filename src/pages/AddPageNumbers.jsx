@@ -24,8 +24,7 @@ const AddPageNumbers = () => {
     setDownloadURL(null);
 
     try {
-      const response = await axios.post(
-        "http://localhost:8080/pdf/add-page-numbers",
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/pdf/add-page-numbers`,
         formData,
         { responseType: "blob" }
       );

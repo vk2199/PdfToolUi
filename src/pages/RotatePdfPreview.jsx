@@ -84,7 +84,7 @@ const RotatePdfPreview = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/pdf/rotate",
+        `${process.env.REACT_APP_BACKEND_URL}/pdf/rotate-pages`,
         formData,
         { responseType: "blob" }
       );

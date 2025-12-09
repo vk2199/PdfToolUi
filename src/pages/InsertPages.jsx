@@ -34,7 +34,7 @@ const InsertPages = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/pdf/insert-pages",
+        `${process.env.REACT_APP_BACKEND_URL}/pdf/insert-pages`,
         formData,
         { responseType: "blob" }
       );

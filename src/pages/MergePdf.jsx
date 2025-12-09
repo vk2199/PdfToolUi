@@ -104,9 +104,8 @@ const MergePdf = () => {
     files.forEach((file) => formData.append("files", file));
 
     try {
-      const response = await axios.post(
-        "http://localhost:8080/pdf/merge",
-        formData,
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/pdf/merge`,
+         formData,
         {
           responseType: "blob",
           headers: { "Content-Type": "multipart/form-data" },
