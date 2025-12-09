@@ -77,7 +77,7 @@ const ReorderPdf = () => {
 
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/pdf/reorder-pages`,
+        `${process.env.REACT_APP_BACKEND_URL}/pdf/reorder`,
         formData,
         { responseType: "blob" }
       );

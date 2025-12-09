@@ -32,7 +32,7 @@ const CompressPdf = () => {
 
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/pdf/compress-pdf`,
+        `${process.env.REACT_APP_BACKEND_URL}/pdf/compress`,
         formData,
         { responseType: "blob" }
       );

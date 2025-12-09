@@ -52,7 +52,7 @@ const PdfToImage = () => {
 
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/pdf/pdf-to-images`,
+        `${process.env.REACT_APP_BACKEND_URL}/pdf/pdf-to-image`,
         formData,
         { responseType: "blob" }
       );

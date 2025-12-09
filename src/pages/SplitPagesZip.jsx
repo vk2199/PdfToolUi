@@ -26,7 +26,7 @@ const SplitPagesZip = () => {
 
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/pdf/split-pages-zip`,
+        `${process.env.REACT_APP_BACKEND_URL}/pdf/split/pages`,
         formData,
         {
           responseType: "blob",

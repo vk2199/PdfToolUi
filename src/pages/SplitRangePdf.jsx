@@ -30,7 +30,7 @@ const SplitRangePdf = () => {
 
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/pdf/split-range`,
+        `${process.env.REACT_APP_BACKEND_URL}/pdf/split/range`,
         formData,
         {
           responseType: "blob",
